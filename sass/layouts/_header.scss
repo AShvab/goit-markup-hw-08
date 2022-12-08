@@ -1,0 +1,95 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #EEEEEE; 
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-nav {
+    display:flex;
+    gap: 50px; 
+  }
+  
+  .navigation {
+    margin-right: auto;    
+  }
+  
+  .header-nav .header-nav-link {
+      position: relative;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--title-text-color);
+  
+      transition:  color var(--tra);  
+    }
+  
+    .current::after{
+      content:'';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+  
+  
+  .header-nav-link.current {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--accent-color);
+  }
+  
+  .header-nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+
+
+    &:hover,
+    &:focus { 
+        color:var(--accent-color);        
+      }
+  }
+  
+  .header-contacts {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .header-contact {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+    transition: color var(--tra);  
+
+    &:hover, 
+    &:focus {
+      color:var(--accent-color);
+    }
+  }
+  
+  .icon-mail,
+  .icon-tel {
+    margin-right: 10px; 
+    fill:currentColor;    
+  }
+  
