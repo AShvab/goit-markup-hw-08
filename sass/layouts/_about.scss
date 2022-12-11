@@ -1,9 +1,12 @@
 
   .about {
+    max-width: 1199px;
     display: none;
-    padding-bottom: 94px;  
+   
     @media screen and (min-width:1200px) {
       display: block;
+      margin: 0 auto;
+      padding-bottom: 94px;  
     }
   }
   
@@ -26,7 +29,7 @@
   .about__item {
   width: calc((100% - 60px) / 3);
   }
-   
+  
 
   .about__wrapper {
   position: relative;
