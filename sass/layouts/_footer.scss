@@ -1,0 +1,230 @@
+.footer-container{
+    width: 100%;
+    display:block ; 
+    text-align: center;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center ;   
+    }
+
+    @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    text-align: start;
+    justify-content: space-between;
+
+    }
+  }
+
+  .contacts {    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:  #2F303A;
+  }
+  
+  .footer-address {
+    @include tablet{
+    margin-right: 165px;
+    }
+    @include desktop {
+        margin-right: 0;
+    }
+  }
+  .contacts-address {
+    display: block;   
+    margin-top: 28px;
+    margin-bottom: 60px;
+    @include desktop {
+        margin-top: 20px;
+    }
+    @include desktop {
+        margin-bottom: 0;
+    }
+  }
+  
+  .contacts-address-item {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    } 
+    @include desktop {
+        margin-bottom: 12px;
+    }
+  }
+
+  .contacts-link {   
+    margin-bottom: 12px;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  
+    transition: color var(--tra);
+
+    &:hover,
+    &:focus {
+       color:var(--secondary-text-color); 
+    } 
+    @include desktop {
+        margin-bottom: 9px;
+    }
+  }
+    
+  .contacts-mail,
+  .contacts-phone {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--tra);    
+    &:hover,
+    &:focus {
+       color:var(--secondary-text-color); 
+    } 
+  } 
+
+  .footer-soc {
+    margin-bottom: 60px;
+    @include tablet {
+        margin-bottom: 0;
+    }
+    @include desktop {
+        margin-left: 70px;
+    }
+  }
+  .footer-soc-uptitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;  
+    letter-spacing: 0.03em; 
+    text-transform: uppercase; 
+    color: var(--secondary-text-color); 
+  }
+  
+  .footer-soc-list {
+    display: flex;
+    justify-content: center;
+    
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .footer-soc-item {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .footer-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+    transition: background-color var(--tra);
+
+    &:hover, 
+    &:focus {
+      background-color: var(--accent-color);  
+    }
+  }
+  
+  .footer-field{  
+    @include desktop {
+        margin-left: 93px;
+    }
+  }
+  
+  .footer-input-wrapper{
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+    
+  }
+  .footer-input-uptitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+  }
+  
+  .footer-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    outline: transparent;
+    font-size: 16px;  
+    padding-left: 16px; 
+    color: var(--secondary-text-color);
+
+    &:focus {
+      border-color: var(--accent-color);
+    }
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;  
+    }
+    @include tablet {
+        width: 450px;
+    }
+    @include desktop {
+          width: 358px;
+    }
+  }
+  
+  .footer-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 62px 10px 28px;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
+    border: none;
+    border-radius: 4px;
+    // display: flex;  
+    transition: box-shadow var(--tra), color var(--tra) ;
+    position: relative;  
+    
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      background-color: #188CE8;
+    }
+    @include desktop {
+        margin-top: 0;
+    }
+  }
+
+  .icon-send {
+    position: absolute;
+    fill: var(--secondary-text-color);
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
