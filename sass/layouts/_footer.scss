@@ -13,9 +13,8 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
-    text-align: start;
     justify-content: space-between;
-
+    text-align: start;
     }
   }
 
@@ -108,8 +107,7 @@
   
   .footer-soc-list {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
     gap: 10px;
     margin-top: 20px;
   }
@@ -164,12 +162,13 @@
   .footer-input {
     width: 100%;
     height: 50px;
+    padding-left: 16px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
     outline: transparent;
-    font-size: 16px;  
-    padding-left: 16px; 
+    font-size: 16px;
+    line-height: 1.25;      
     color: var(--secondary-text-color);
 
     &:focus {
@@ -206,7 +205,7 @@
     border-color: transparent;
     border: none;
     border-radius: 4px;
-    // display: flex;  
+      
     transition: box-shadow var(--tra), color var(--tra) ;
     position: relative;  
     
