@@ -2,10 +2,12 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #EEEEEE; 
+    
     @include tablet {
       padding-top: 21px;
       padding-bottom: 21px;
-      border-bottom: 1px solid #EEEEEE; 
+     
     }
     @include desktop {
     padding-top: 24px;
@@ -18,21 +20,7 @@
     align-items: center;    
   }
 
-  .menu-open {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    &:focus {
-      fill: var(--accent-color);
-    }
-    @include tablet {
-      display: none;
-    }
 
-  }
   .header-nav {
     display: none;
     @media screen and (min-width:768px) {
@@ -158,12 +146,26 @@
     }
   }
 
-
+  .menu-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    &:focus {
+      fill: var(--accent-color);
+    }
+    @include tablet {
+      display: none;
+    }
+  }
 
   .mob-menu {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100vw;
     height: 100vh;    
     background-color: #ffffff;
@@ -181,6 +183,7 @@
       display: none;
     }
   }
+
 
   .menu-close {
     display: block;
