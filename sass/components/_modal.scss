@@ -213,8 +213,12 @@
     color: var(--accent-color);
     display: block;
     margin-left: 3px;
-    text-decoration:underline;
+    
     position: relative;
+
+    @media screen and (max-width:479px) {
+      text-decoration:underline;
+    }
     @include desktop {
       font-size: 14px;
       line-height: calc(24 / 14);

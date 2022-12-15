@@ -394,8 +394,12 @@ a {
   color: var(--accent-color);
   display: block;
   margin-left: 3px;
-  text-decoration: underline;
   position: relative;
+}
+@media screen and (max-width: 479px) {
+  .policy-link {
+    text-decoration: underline;
+  }
 }
 @media screen and (min-width: 1200px) {
   .policy-link {
