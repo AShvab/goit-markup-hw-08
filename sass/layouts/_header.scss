@@ -3,7 +3,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #EEEEEE; 
-    
+
     @include tablet {
       padding-top: 21px;
       padding-bottom: 21px;
@@ -226,10 +226,13 @@
 
 .mob-contacts-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  @include mobile {
+    font-size: 34px;
+  }
   
 }
 .mob-contacts-link {
@@ -244,12 +247,16 @@
 .menu-soc { 
   
   display: flex;
-  gap: 20px;
+  gap: 5px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  @include mobile {
+    gap: 20px;
+    font-size: 18px;
+  }
 }
 
 
