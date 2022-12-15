@@ -38,7 +38,6 @@ address {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -1222,6 +1221,9 @@ a {
 }
 
 .filter-top-text {
+  display: flex;
+  justify-items: center;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
