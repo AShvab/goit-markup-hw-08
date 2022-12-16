@@ -1329,6 +1329,9 @@ a {
   background-color: #2F303A;
 }
 
+.footer-address {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer-address {
     margin-right: 165px;
@@ -1337,22 +1340,17 @@ a {
 @media screen and (min-width: 1200px) {
   .footer-address {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
 .contacts-address {
   display: block;
   margin-top: 28px;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .contacts-address {
     margin-top: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts-address {
-    margin-bottom: 0;
   }
 }
 
@@ -1369,7 +1367,6 @@ a {
 }
 
 .contacts-link {
-  margin-bottom: 12px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.1428571429;
